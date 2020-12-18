@@ -1,0 +1,630 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{01A3973E-6BC3-46BC-A990-E9C2BF4D6F47}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>WindowsFormsApp4</RootNamespace>
+    <AssemblyName>WindowsFormsApp4</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>C:\Users\ahnkh\Downloads\WebSite\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <SupportUrl>https://www.itechsolution.xyz</SupportUrl>
+    <ProductName>School Management System</ProductName>
+    <PublisherName>Ahsan</PublisherName>
+    <SuiteName>Itech Solutions</SuiteName>
+    <ApplicationRevision>2</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <CreateDesktopShortcut>true</CreateDesktopShortcut>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>2715746716390B249CAD33821A12C1B4AEFE5AAD</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>WindowsFormsApp4_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Bunifu.Core, Version=1.11.5.1, Culture=neutral, PublicKeyToken=e8e24ccd28363fe9" />
+    <Reference Include="Bunifu.UI.WinForms.BunifuPictureBox">
+      <HintPath>C:\Users\ahnkh\Downloads\Bunifu UI WinForms 1.11.5.1\Bunifu.UI.WinForms.BunifuPictureBox.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuScrollBar">
+      <HintPath>C:\Users\ahnkh\Downloads\Bunifu UI WinForms 1.11.5.1\Bunifu.UI.WinForms.BunifuScrollBar.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuSlider">
+      <HintPath>C:\Users\ahnkh\Downloads\Bunifu UI WinForms 1.11.5.1\Bunifu.UI.WinForms.BunifuSlider.dll</HintPath>
+    </Reference>
+    <Reference Include="Guna.UI2">
+      <HintPath>C:\Users\ahnkh\Downloads\Guna.UI-Framework-Lib-master\Guna.UI2_WinFroms\.net 4.0\Guna.UI2.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework.Design, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework.Fonts, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.Fonts.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing.Design" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ADD ADMINISTRATOR.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ADD ADMINISTRATOR.designer.cs">
+      <DependentUpon>ADD ADMINISTRATOR.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ADD CLASS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ADD CLASS.designer.cs">
+      <DependentUpon>ADD CLASS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ADD DEPARTMENT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ADD DEPARTMENT.designer.cs">
+      <DependentUpon>ADD DEPARTMENT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ADD EMPLOYEE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ADD EMPLOYEE.designer.cs">
+      <DependentUpon>ADD EMPLOYEE.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ADD RESULT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ADD RESULT.designer.cs">
+      <DependentUpon>ADD RESULT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ADD STUDENT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ADD STUDENT.designer.cs">
+      <DependentUpon>ADD STUDENT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ADD SUBJECT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ADD SUBJECT.designer.cs">
+      <DependentUpon>ADD SUBJECT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ADD TEACHER.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ADD TEACHER.designer.cs">
+      <DependentUpon>ADD TEACHER.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ADD TIMETABLE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ADD TIMETABLE.designer.cs">
+      <DependentUpon>ADD TIMETABLE.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ADMIN.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ADMIN.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.cs">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SMS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SMS.Designer.cs">
+      <DependentUpon>SMS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GlobalSuppressions.cs" />
+    <Compile Include="PAYMENT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PAYMENT.designer.cs">
+      <DependentUpon>PAYMENT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SCHOOLDataSet.cs">
+      <DependentUpon>SCHOOLDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="SCHOOLDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SCHOOLDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="SCHOOLDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SCHOOLDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="STUDENT.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>STUDENT.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="SUBJECT.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SUBJECT.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="TEACHER.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TEACHER.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="VIEW ADMINISTRATOR.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VIEW ADMINISTRATOR.designer.cs">
+      <DependentUpon>VIEW ADMINISTRATOR.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VIEW CLASS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VIEW CLASS.designer.cs">
+      <DependentUpon>VIEW CLASS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VIEW DEPARTMENT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VIEW DEPARTMENT.designer.cs">
+      <DependentUpon>VIEW DEPARTMENT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VIEW EMPLOYEE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VIEW EMPLOYEE.designer.cs">
+      <DependentUpon>VIEW EMPLOYEE.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VIEW RESULT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VIEW RESULT.designer.cs">
+      <DependentUpon>VIEW RESULT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VIEW STUDENT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VIEW STUDENT.designer.cs">
+      <DependentUpon>VIEW STUDENT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VIEW SUBJECT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VIEW SUBJECT.designer.cs">
+      <DependentUpon>VIEW SUBJECT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VIEW TEACHER.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VIEW TEACHER.designer.cs">
+      <DependentUpon>VIEW TEACHER.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VIEW TIMETABLE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VIEW TIMETABLE.designer.cs">
+      <DependentUpon>VIEW TIMETABLE.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="ADD ADMINISTRATOR.resx">
+      <DependentUpon>ADD ADMINISTRATOR.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ADD CLASS.resx">
+      <DependentUpon>ADD CLASS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ADD DEPARTMENT.resx">
+      <DependentUpon>ADD DEPARTMENT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ADD EMPLOYEE.resx">
+      <DependentUpon>ADD EMPLOYEE.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ADD RESULT.resx">
+      <DependentUpon>ADD RESULT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ADD STUDENT.resx">
+      <DependentUpon>ADD STUDENT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ADD SUBJECT.resx">
+      <DependentUpon>ADD SUBJECT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ADD TEACHER.resx">
+      <DependentUpon>ADD TEACHER.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ADD TIMETABLE.resx">
+      <DependentUpon>ADD TIMETABLE.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SMS.resx">
+      <DependentUpon>SMS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PAYMENT.resx">
+      <DependentUpon>PAYMENT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="VIEW ADMINISTRATOR.resx">
+      <DependentUpon>VIEW ADMINISTRATOR.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VIEW CLASS.resx">
+      <DependentUpon>VIEW CLASS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VIEW DEPARTMENT.resx">
+      <DependentUpon>VIEW DEPARTMENT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VIEW EMPLOYEE.resx">
+      <DependentUpon>VIEW EMPLOYEE.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VIEW RESULT.resx">
+      <DependentUpon>VIEW RESULT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VIEW STUDENT.resx">
+      <DependentUpon>VIEW STUDENT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VIEW SUBJECT.resx">
+      <DependentUpon>VIEW SUBJECT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VIEW TEACHER.resx">
+      <DependentUpon>VIEW TEACHER.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VIEW TIMETABLE.resx">
+      <DependentUpon>VIEW TIMETABLE.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="ADMIN.xsc">
+      <DependentUpon>ADMIN.xsd</DependentUpon>
+    </None>
+    <None Include="ADMIN.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ADMIN.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ADMIN.xss">
+      <DependentUpon>ADMIN.xsd</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="SCHOOLDataSet.xsc">
+      <DependentUpon>SCHOOLDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="SCHOOLDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SCHOOLDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SCHOOLDataSet.xss">
+      <DependentUpon>SCHOOLDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="SCHOOLDataSet1.xsc">
+      <DependentUpon>SCHOOLDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="SCHOOLDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SCHOOLDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SCHOOLDataSet1.xss">
+      <DependentUpon>SCHOOLDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="STUDENT.xsc">
+      <DependentUpon>STUDENT.xsd</DependentUpon>
+    </None>
+    <None Include="STUDENT.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>STUDENT.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="STUDENT.xss">
+      <DependentUpon>STUDENT.xsd</DependentUpon>
+    </None>
+    <None Include="SUBJECT.xsc">
+      <DependentUpon>SUBJECT.xsd</DependentUpon>
+    </None>
+    <None Include="SUBJECT.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SUBJECT.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SUBJECT.xss">
+      <DependentUpon>SUBJECT.xsd</DependentUpon>
+    </None>
+    <None Include="TEACHER.xsc">
+      <DependentUpon>TEACHER.xsd</DependentUpon>
+    </None>
+    <None Include="TEACHER.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TEACHER.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="TEACHER.xss">
+      <DependentUpon>TEACHER.xsd</DependentUpon>
+    </None>
+    <None Include="WindowsFormsApp4_TemporaryKey.pfx" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Preview_SM.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\USER1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\box.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\login-button-png-18040.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-shutdown-40.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bigstock-Human-Resources-47313163.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\USER11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\unnamed.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-admin-settings-male-40.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-shutdown-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Collapse Arrow_20px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Expand Arrow_20px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shutdown_26px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cancel_100px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close_window_100px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delete_80px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delete_60px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_school_64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\school_64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img_533418 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img_533418.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\b1b7de37299d6d589ba3d7e28652869b.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\265-2657808_school-education-icons-in-svg-and-png-school-icon-png-transparent.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\high-school-svg-png-icon-free-download-533482-onlinewebfontscom-school-icon-png-980_598.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-school-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\school-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\school_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ICON.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Untitled.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shiningstarglobal-school-school-logo-design-11563223624kli50jxuwg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\221-2218021_entracing-school-logo-design-samples-how-to-create.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\png-transparent-national-secondary-school-computer-icons-escuela-school-angle-building-logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Pngtree.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_school_40px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_school_80px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_school_120px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\undraw_teaching_f1cm.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconmonstr-arrow-4-240.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrow-right-circle-fill.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconmonstr-user-20-240.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user-2-fill.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconmonstr-user-circle-thin-240.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconmonstr-power-on-off-8-240.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconmonstr-power-on-off-8-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconmonstr-power-on-off-8-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\building-4-fill %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delete_50px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\macos_minimize_30px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo_transparent.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\facebook_24px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\facebook_48px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\instagram_48px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.SqlServer.Express.11.0">
+      <Visible>False</Visible>
+      <ProductName>SQL Server 2012 Express</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.SqlServer.SqlLocalDB.11.1">
+      <Visible>False</Visible>
+      <ProductName>SQL Server 2012 Express LocalDB</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="SCHOOL.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SCHOOL_log.ldf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <DependentUpon>SCHOOL.mdf</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

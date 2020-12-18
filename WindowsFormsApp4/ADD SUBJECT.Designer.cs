@@ -1,0 +1,361 @@
+﻿namespace WindowsFormsApp4
+{
+    partial class ADD_SUBJECT
+    {
+        /// <summary>
+        /// Required designer variable.
+        /// </summary>
+        private System.ComponentModel.IContainer components = null;
+
+        /// <summary>
+        /// Clean up any resources being used.
+        /// </summary>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
+        #region Windows Form Designer generated code
+
+        /// <summary>
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
+        /// </summary>
+        private void InitializeComponent()
+        {
+            this.components = new System.ComponentModel.Container();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.aDMINISTRATORBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.aDMIN = new WindowsFormsApp4.ADMIN();
+            this.aDMINISTRATORBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.sCHOOLDataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.sCHOOLDataSet = new WindowsFormsApp4.SCHOOLDataSet();
+            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.comboBox3 = new System.Windows.Forms.ComboBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.comboBox4 = new System.Windows.Forms.ComboBox();
+            this.classBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.sCHOOLDataSet1 = new WindowsFormsApp4.SCHOOLDataSet1();
+            this.classBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.button1 = new System.Windows.Forms.Button();
+            this.classTableAdapter = new WindowsFormsApp4.SCHOOLDataSetTableAdapters.classTableAdapter();
+            this.classTableAdapter1 = new WindowsFormsApp4.SCHOOLDataSet1TableAdapters.classTableAdapter();
+            this.aDMINISTRATORTableAdapter = new WindowsFormsApp4.SCHOOLDataSetTableAdapters.ADMINISTRATORTableAdapter();
+            this.aDMINISTRATORTableAdapter1 = new WindowsFormsApp4.ADMINTableAdapters.ADMINISTRATORTableAdapter();
+            this.comboBox6 = new System.Windows.Forms.ComboBox();
+            this.label8 = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.aDMINISTRATORBindingSource1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.aDMIN)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.aDMINISTRATORBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sCHOOLDataSetBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sCHOOLDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.classBindingSource1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sCHOOLDataSet1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.classBindingSource)).BeginInit();
+            this.SuspendLayout();
+            // 
+            // textBox1
+            // 
+            this.textBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(160)))), ((int)(((byte)(138)))));
+            this.textBox1.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox1.Location = new System.Drawing.Point(254, 153);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.ReadOnly = true;
+            this.textBox1.Size = new System.Drawing.Size(164, 23);
+            this.textBox1.TabIndex = 0;
+            // 
+            // textBox2
+            // 
+            this.textBox2.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox2.Location = new System.Drawing.Point(254, 205);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(164, 23);
+            this.textBox2.TabIndex = 1;
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.aDMINISTRATORBindingSource1, "Fname", true));
+            this.comboBox1.DataSource = this.aDMINISTRATORBindingSource;
+            this.comboBox1.DisplayMember = "Fname";
+            this.comboBox1.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(723, 148);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(164, 25);
+            this.comboBox1.TabIndex = 5;
+            this.comboBox1.ValueMember = "Fname";
+            // 
+            // aDMINISTRATORBindingSource1
+            // 
+            this.aDMINISTRATORBindingSource1.DataMember = "ADMINISTRATOR";
+            this.aDMINISTRATORBindingSource1.DataSource = this.aDMIN;
+            // 
+            // aDMIN
+            // 
+            this.aDMIN.DataSetName = "ADMIN";
+            this.aDMIN.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // aDMINISTRATORBindingSource
+            // 
+            this.aDMINISTRATORBindingSource.DataMember = "ADMINISTRATOR";
+            this.aDMINISTRATORBindingSource.DataSource = this.sCHOOLDataSetBindingSource;
+            // 
+            // sCHOOLDataSetBindingSource
+            // 
+            this.sCHOOLDataSetBindingSource.DataSource = this.sCHOOLDataSet;
+            this.sCHOOLDataSetBindingSource.Position = 0;
+            // 
+            // sCHOOLDataSet
+            // 
+            this.sCHOOLDataSet.DataSetName = "SCHOOLDataSet";
+            this.sCHOOLDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // comboBox2
+            // 
+            this.comboBox2.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.aDMINISTRATORBindingSource1, "Lname", true));
+            this.comboBox2.DataSource = this.aDMINISTRATORBindingSource;
+            this.comboBox2.DisplayMember = "Lname";
+            this.comboBox2.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBox2.FormattingEnabled = true;
+            this.comboBox2.Location = new System.Drawing.Point(723, 200);
+            this.comboBox2.Name = "comboBox2";
+            this.comboBox2.Size = new System.Drawing.Size(164, 25);
+            this.comboBox2.TabIndex = 6;
+            this.comboBox2.ValueMember = "Lname";
+            this.comboBox2.SelectedIndexChanged += new System.EventHandler(this.comboBox2_SelectedIndexChanged);
+            // 
+            // comboBox3
+            // 
+            this.comboBox3.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBox3.FormattingEnabled = true;
+            this.comboBox3.Location = new System.Drawing.Point(254, 387);
+            this.comboBox3.Name = "comboBox3";
+            this.comboBox3.Size = new System.Drawing.Size(164, 25);
+            this.comboBox3.TabIndex = 4;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.DarkSlateGray;
+            this.label1.Location = new System.Drawing.Point(74, 156);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(87, 18);
+            this.label1.TabIndex = 7;
+            this.label1.Text = "SUBJECT ID";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.DarkSlateGray;
+            this.label2.Location = new System.Drawing.Point(74, 208);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(116, 18);
+            this.label2.TabIndex = 8;
+            this.label2.Text = "SUBJECT NAME";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.DarkSlateGray;
+            this.label3.Location = new System.Drawing.Point(74, 264);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(102, 18);
+            this.label3.TabIndex = 9;
+            this.label3.Text = "CLASS NAME";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.DarkSlateGray;
+            this.label4.Location = new System.Drawing.Point(74, 390);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(148, 18);
+            this.label4.TabIndex = 10;
+            this.label4.Text = "DEPARTMENT NAME";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.DarkSlateGray;
+            this.label5.Location = new System.Drawing.Point(507, 156);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(145, 18);
+            this.label5.TabIndex = 11;
+            this.label5.Text = "ADMIN FIRST NAME";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.Color.DarkSlateGray;
+            this.label6.Location = new System.Drawing.Point(507, 208);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(143, 18);
+            this.label6.TabIndex = 12;
+            this.label6.Text = "ADMIN LAST NAME";
+            // 
+            // comboBox4
+            // 
+            this.comboBox4.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.classBindingSource1, "name", true));
+            this.comboBox4.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBox4.FormattingEnabled = true;
+            this.comboBox4.Location = new System.Drawing.Point(254, 261);
+            this.comboBox4.Name = "comboBox4";
+            this.comboBox4.Size = new System.Drawing.Size(164, 25);
+            this.comboBox4.TabIndex = 2;
+            this.comboBox4.SelectedIndexChanged += new System.EventHandler(this.comboBox4_SelectedIndexChanged);
+            // 
+            // classBindingSource1
+            // 
+            this.classBindingSource1.DataMember = "class";
+            this.classBindingSource1.DataSource = this.sCHOOLDataSet1;
+            // 
+            // sCHOOLDataSet1
+            // 
+            this.sCHOOLDataSet1.DataSetName = "SCHOOLDataSet1";
+            this.sCHOOLDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // classBindingSource
+            // 
+            this.classBindingSource.DataMember = "class";
+            this.classBindingSource.DataSource = this.sCHOOLDataSet;
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.White;
+            this.button1.Location = new System.Drawing.Point(457, 458);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(110, 36);
+            this.button1.TabIndex = 7;
+            this.button1.Text = "SUBMIT";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // classTableAdapter
+            // 
+            this.classTableAdapter.ClearBeforeFill = true;
+            // 
+            // classTableAdapter1
+            // 
+            this.classTableAdapter1.ClearBeforeFill = true;
+            // 
+            // aDMINISTRATORTableAdapter
+            // 
+            this.aDMINISTRATORTableAdapter.ClearBeforeFill = true;
+            // 
+            // aDMINISTRATORTableAdapter1
+            // 
+            this.aDMINISTRATORTableAdapter1.ClearBeforeFill = true;
+            // 
+            // comboBox6
+            // 
+            this.comboBox6.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.classBindingSource1, "name", true));
+            this.comboBox6.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBox6.FormattingEnabled = true;
+            this.comboBox6.Location = new System.Drawing.Point(254, 320);
+            this.comboBox6.Name = "comboBox6";
+            this.comboBox6.Size = new System.Drawing.Size(164, 25);
+            this.comboBox6.TabIndex = 3;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.ForeColor = System.Drawing.Color.DarkSlateGray;
+            this.label8.Location = new System.Drawing.Point(74, 327);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(120, 18);
+            this.label8.TabIndex = 18;
+            this.label8.Text = "CLASS SECTION";
+            // 
+            // ADD_SUBJECT
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(160)))), ((int)(((byte)(138)))));
+            this.ClientSize = new System.Drawing.Size(1162, 733);
+            this.Controls.Add(this.comboBox6);
+            this.Controls.Add(this.label8);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.comboBox4);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.comboBox3);
+            this.Controls.Add(this.comboBox2);
+            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.textBox1);
+            this.ForeColor = System.Drawing.Color.DarkSlateGray;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Name = "ADD_SUBJECT";
+            this.Text = "ADD_SUBJECT";
+            this.Load += new System.EventHandler(this.ADD_SUBJECT_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.aDMINISTRATORBindingSource1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.aDMIN)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.aDMINISTRATORBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sCHOOLDataSetBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sCHOOLDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.classBindingSource1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sCHOOLDataSet1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.classBindingSource)).EndInit();
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
+        }
+
+        #endregion
+
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.ComboBox comboBox3;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.ComboBox comboBox4;
+        private System.Windows.Forms.Button button1;
+        private SCHOOLDataSet sCHOOLDataSet;
+        private System.Windows.Forms.BindingSource classBindingSource;
+        private SCHOOLDataSetTableAdapters.classTableAdapter classTableAdapter;
+        private SCHOOLDataSet1 sCHOOLDataSet1;
+        private System.Windows.Forms.BindingSource classBindingSource1;
+        private SCHOOLDataSet1TableAdapters.classTableAdapter classTableAdapter1;
+        private System.Windows.Forms.BindingSource sCHOOLDataSetBindingSource;
+        private System.Windows.Forms.BindingSource aDMINISTRATORBindingSource;
+        private SCHOOLDataSetTableAdapters.ADMINISTRATORTableAdapter aDMINISTRATORTableAdapter;
+        private ADMIN aDMIN;
+        private System.Windows.Forms.BindingSource aDMINISTRATORBindingSource1;
+        private ADMINTableAdapters.ADMINISTRATORTableAdapter aDMINISTRATORTableAdapter1;
+        private System.Windows.Forms.ComboBox comboBox6;
+        private System.Windows.Forms.Label label8;
+    }
+}
